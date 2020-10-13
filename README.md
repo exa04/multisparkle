@@ -1,4 +1,7 @@
 # ✨multisparkle✨
+
+![](https://raw.githubusercontent.com/sylveon-ari/multisparkle/main/multisparkle.png)
+
 Generates sparkles with the PIL library for Python.
 
 ## Examples
