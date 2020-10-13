@@ -24,4 +24,4 @@ multisparkle.generate(
     fg_sparkle_secondary_shortness = [10, 70],
     fg_sparkle_middle_width = [20, 50],
     fg_sparkle_blur = [2, 3]
-)
+).save("sparkle.png")
