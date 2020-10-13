@@ -109,9 +109,5 @@ def generate(
         print('Foreground sparkle {4}/{5} at {0}, {1}, sized {2}x{3}'.format(x, y, w, h, i+1, fg_count))
         trans.paste(img, (x, y, x + w, y + h))
         result = Image.alpha_composite(result, trans)
-
-    result.save(fname)
-    timeNow = time.time()
-    timeDiff = timeNow - timeStart
-    timeStr = str(datetime.timedelta(seconds=timeDiff))
-    print('Saved sparkles to {0}. They were generated and saved in {1}'.format(fname, timeStr))
+        
+    return result
