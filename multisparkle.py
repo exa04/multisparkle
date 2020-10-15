@@ -50,7 +50,6 @@ def sparkle(rayWidth = 20, srayWidth = 10, srayshortness = 50, middleRadius = 10
 def generate(
     width = 1920,
     height = 1080,
-    fname = "sparkle.png",
 
     size = 5,
     variation = 50,
@@ -73,9 +72,7 @@ def generate(
     fg_sparkle_blur = [2, 3]
     ):
 
-    result = Image.new("RGBA", (width, height))
-
-    timeStart = time.time()
+    result = Image.new("RGBA", (width, height), "black")
 
     for i in range(count):
         trans = Image.new("RGBA", (width, height))
